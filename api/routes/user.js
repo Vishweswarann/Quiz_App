@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
-const auth = require('../middleware/authMiddleware'); // Protects these routes
+const auth = require('../middleware/authMiddleWare'); // Protects these routes
 
 // GET /api/user/stats - Fetch the user's data for the Dashboard
 router.get('/stats', auth, async (req, res) => {
