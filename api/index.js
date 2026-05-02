@@ -11,9 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 // 3. Add Routes 
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/quiz', require('./routes/quiz'));
-app.use('/api/user', require('./routes/user'));
+app.use('/api/auth', require('../routes/auth'));
+app.use('/api/quiz', require('../routes/quiz'));
+app.use('/api/user', require('../routes/user'));
 
 // 4. Basic test route
 app.get('/', (req, res) => {
